@@ -84,44 +84,41 @@ function Home() {
               </div>
             </div>
 
-            <p 
-              className={`text-base sm:text-lg mb-6 leading-relaxed text-center transform transition-all duration-1000 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}
-              style={{ fontFamily: 'Roboto Slab, serif' }}
-            >
-              I am a passionate <span className="font-semibold text-blue-500">Backend Engineer</span> with a strong focus on building scalable systems, designing robust APIs, and optimizing data workflows. 
-              Creative and detail-oriented, I enjoy solving complex engineering problems and <span className="italic">writing</span> about technology, best practices, and ideas that I find impactful.
-            </p>
+           {/* Social Links */}
+              <div
+                className={`flex justify-center gap-10 mb-10 pt-10 transform transition-all duration-1000 delay-500 ${
+                  isLoaded ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
+                }`}
+              >
+                <a
+                  href="https://www.linkedin.com/in/philip-daudu/"
+                  className={`${colors.social} transform hover:scale-110 transition-all duration-300 hover:text-blue-500`}
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a
+                  href="https://github.com/Philip-D21"
+                  className={`${colors.social} transform hover:scale-110 transition-all duration-300 hover:text-gray-600`}
+                  aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-github fa-2x"></i>
+                </a>
+                <a
+                  href="https://x.com/philip_d21"
+                  className={`${colors.social} transform hover:scale-110 transition-all duration-300 hover:text-blue-400`}
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-twitter fa-2x"></i>
+                </a>
+              </div>
 
-            {/* Social Links */}
-            <div className={`flex gap-6 mb-6 justify-center transform transition-all duration-1000 delay-500 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
-              <a 
-                href="https://www.linkedin.com/in/philip-daudu/" 
-                className={`${colors.social} transform hover:scale-110 transition-all duration-300 hover:text-blue-500`} 
-                aria-label="LinkedIn" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-              <i className="fab fa-linkedin fa-2x"></i>
-            </a>
-              <a 
-                href="https://github.com/Philip-D21" 
-                className={`${colors.social} transform hover:scale-110 transition-all duration-300 hover:text-gray-600`} 
-                aria-label="GitHub" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-              <i className="fab fa-github fa-2x"></i>
-            </a>
-              <a 
-                href="https://x.com/philip_d21" 
-                className={`${colors.social} transform hover:scale-110 transition-all duration-300 hover:text-blue-400`} 
-                aria-label="Twitter" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-twitter fa-2x"></i>
-              </a>
-            </div>
 
             {/* CTA Button */}
             <div className={`transform transition-all duration-1000 delay-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
@@ -194,7 +191,7 @@ function Home() {
             
             {/* Description */}
             <p 
-              className={`text-xl xl:text-2xl mb-6 leading-relaxed transform transition-all duration-1000 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}
+              className={`text-xl xl:text-2xl mb-0 leading-relaxed transform transition-all duration-1000 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}
               style={{ fontFamily: 'Roboto Slab, serif' }}
             >
               I am a passionate <span className="font-semibold text-blue-500">Backend Engineer</span> with a strong focus on building scalable systems, designing robust APIs, and optimizing data workflows. 
@@ -202,7 +199,7 @@ function Home() {
             </p>
 
             {/* Social Links */}
-            <div className={`flex gap-10 mb-10 transform transition-all duration-1000 delay-500 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
+            <div className={`flex gap-10 mb-10 pt-4 transform transition-all duration-1000 delay-500 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
               <a 
                 href="https://www.linkedin.com/in/philip-daudu/" 
                 className={`${colors.social} transform hover:scale-110 transition-all duration-300 hover:text-blue-500`} 
