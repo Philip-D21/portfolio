@@ -109,16 +109,16 @@ function Experience() {
     <div className="flex flex-col h-full relative">
       <main className="flex-1 w-full px-4 sm:px-6 pt-4 overflow-y-auto">
         {/* Header Section */}
-        <div className={`mb-12 transform transition-all duration-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <div className={`mb-12  transform transition-all duration-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <h1 className="text-4xl sm:text-6xl font-light mb-4 leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             <span className="font-extrabold">Experience</span>
           </h1>
-          <p className={`text-lg sm:text-xl ${colors.textSecondary} max-w-3xl mb-8`} style={{ fontFamily: 'Roboto Slab, serif' }}>
+          <p className={`text-lgr sm:text-xl ${colors.textSecondary} max-w-3xl  text-center mb-8`} style={{ fontFamily: 'Roboto Slab, serif' }}>
             My professional journey in software development and building scalable solutions.
           </p>
 
           {/* Interactive Filter Tabs */}
-          <div className="flex flex-wrap gap-4 mb-8">
+          <div className="flex flex-wrap gap-4 justify-center mb-8">
             <button
               onClick={() => setActiveFilter('all')}
               className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
