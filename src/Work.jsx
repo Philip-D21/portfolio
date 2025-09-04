@@ -11,7 +11,7 @@ function Work() {
         title="Work & Projects - Philip Daudu | Backend Engineering Portfolio"
         description="Discover Philip Daudu's portfolio of backend engineering projects, API developments, and system architecture work. View my technical projects and development showcase."
         keywords="Philip Daudu Projects, Backend Engineering Portfolio, API Projects, System Architecture, Software Development Work, GitHub Projects"
-        url="https://philipd.dev/work"
+        url="https://philipd.vercel.app/work"
       />
       <main className="flex-1 w-full px-4 sm:px-6 pt-4">
         <div className="mb-12">

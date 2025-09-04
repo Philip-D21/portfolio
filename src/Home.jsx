@@ -137,7 +137,7 @@ function Home() {
         title="Philip Daudu - Backend Engineer & Full-Stack Developer | Home"
         description="Welcome to Philip Daudu's portfolio. Passionate Backend Engineer specializing in scalable systems, robust APIs, and optimized data workflows. Explore my projects, experience, and technical blog."
         keywords="Philip Daudu, Backend Engineer, Full-Stack Developer, Portfolio, Python, Node.js, API Development, Cloud Computing, Software Engineer"
-        url="https://philipd.dev/"
+        url="https://philipd.vercel.app/"
       />
       {/* HOME SECTION */}
       <section id="home-section" className="min-h-screen flex flex-col justify-center relative">

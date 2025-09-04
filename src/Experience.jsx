@@ -112,7 +112,7 @@ function Experience() {
         title="Experience - Philip Daudu | Backend Engineer & Full-Stack Developer"
         description="Explore Philip Daudu's professional experience as a Backend Engineer. View my work history, technical skills, projects, and career progression in software development."
         keywords="Philip Daudu Experience, Backend Engineer Jobs, Software Developer Career, API Development Experience, Python Developer, Node.js Projects"
-        url="https://philipd.dev/experience"
+        url="https://philipd.vercel.app /experience"
       />
       <main className="flex-1 w-full px-4 sm:px-6 pt-4 overflow-y-auto">
         {/* Header Section */}

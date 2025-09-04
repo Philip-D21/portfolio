@@ -20,7 +20,7 @@ function Blog() {
       url: "https://dev.to/philipd21/push-notification-with-firebase-nestjs-1n58",
       description: "This article describes the integration and implementation of Firebase Cloud Messaging (FCM) push notifications within the backend service, built using NestJS. Learn how to set up real-time notifications for web, Android, and iOS applications.",
       date: "2025",
-      readTime: "8 min read",
+      readTime: "5 min read",
       tags: ["Firebase", "NestJS", "Push Notifications", "Backend"],
       platformIcon: "fab fa-dev",
       platformColor: "text-green-600",
@@ -60,7 +60,7 @@ function Blog() {
         title="Blog - Philip Daudu | Backend Engineering & Development Insights"
         description="Read Philip Daudu's technical blog featuring insights on backend engineering, API development, system design, and software development best practices. Stay updated with the latest in tech."
         keywords="Philip Daudu Blog, Backend Engineering Blog, API Development Articles, Software Development Insights, Technical Writing, Dev.to, Medium Articles"
-        url="https://philipd.dev/blog"
+        url="https://philipd.vercel.app/blog"
       />
       <main className="flex-1 w-full px-4 sm:px-6 pt-4 overflow-y-auto">
         {/* Header Section */}

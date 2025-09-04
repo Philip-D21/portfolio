@@ -47,7 +47,7 @@ Each page uses a custom SEO component that updates:
   title="Page Title"
   description="Page description"
   keywords="relevant, keywords"
-  url="https://philipd.dev/page"
+  url="https://philipd.vercel.app/page"
 />
 ```
 
