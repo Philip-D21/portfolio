@@ -26,6 +26,7 @@ export default {
         },
       },
       fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
         ibmplexsans: ['IBM Plex Sans', 'sans-serif'],

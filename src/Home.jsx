@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from './ThemeContext';
 import { useLocation } from 'react-router-dom';
+import SEO from './SEO';
 
 function Home() {
   const { colors } = useTheme();
@@ -132,6 +133,12 @@ function Home() {
 
   return (
     <div className="h-full overflow-y-auto scroll-smooth">
+      <SEO 
+        title="Philip Daudu - Backend Engineer & Full-Stack Developer | Home"
+        description="Welcome to Philip Daudu's portfolio. Passionate Backend Engineer specializing in scalable systems, robust APIs, and optimized data workflows. Explore my projects, experience, and technical blog."
+        keywords="Philip Daudu, Backend Engineer, Full-Stack Developer, Portfolio, Python, Node.js, API Development, Cloud Computing, Software Engineer"
+        url="https://philipd.dev/"
+      />
       {/* HOME SECTION */}
       <section id="home-section" className="min-h-screen flex flex-col justify-center relative">
         <div className="flex-1 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 pt-4 sm:pt-6 md:pt-8">
@@ -152,7 +159,7 @@ function Home() {
 
             <div className={`text-center transform transition-all duration-1000 ${isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
               <div className="mb-6">
-                <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-2 leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-2 leading-none" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Philip <span className="font-extrabold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Daudu</span>
                 </h1>
                 <div className="h-8 xs:h-10 sm:h-12 md:h-14 overflow-hidden">
@@ -166,7 +173,7 @@ function Home() {
                 </div>
               </div>
 
-              <p className={`text-sm xs:text-base sm:text-lg md:text-xl mb-0 leading-relaxed text-center px-2 sm:px-4 md:px-8 transform transition-all duration-1000 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`} style={{ fontFamily: 'Roboto Slab, serif' }}>
+              <p className={`text-sm xs:text-base sm:text-lg md:text-xl mb-0 leading-relaxed text-center px-2 sm:px-4 md:px-8 transform transition-all duration-1000 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`} style={{ fontFamily: 'Inter, sans-serif' }}>
                 I am a passionate <span className="font-semibold text-blue-500">Backend Engineer</span> with a strong focus on building scalable systems, designing robust APIs, and optimizing data workflows. 
                 Creative and detail-oriented, I enjoy solving complex engineering problems and <span className="italic">writing</span> about technology, best practices, and ideas that I find impactful.
               </p>
@@ -184,7 +191,7 @@ function Home() {
               </div>
 
               <div className={`transform transition-all duration-1000 delay-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
-                <a href="mailto:philiplekan88@gmail.com" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-sm sm:text-base md:text-lg" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                <a href="mailto:philiplekan88@gmail.com" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-sm sm:text-base md:text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Let's Build Together
                   <i className="fas fa-arrow-right ml-1 sm:ml-2"></i>
                 </a>
@@ -208,7 +215,7 @@ function Home() {
               </div>
 
               <div className="text-center">
-                <h1 className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-light mb-3 leading-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                <h1 className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-light mb-3 leading-tight" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Philip <span className="font-extrabold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Daudu</span>
                 </h1>
                 <div className="h-10 lg:h-12 xl:h-14 2xl:h-16 overflow-hidden">
@@ -224,7 +231,7 @@ function Home() {
             </div>
 
             <div className={`flex-1 max-w-xl lg:max-w-2xl xl:max-w-3xl transform transition-all duration-1000 ${isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
-              <p className={`text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-0 leading-relaxed transform transition-all duration-1000 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`} style={{ fontFamily: 'Roboto Slab, serif' }}>
+              <p className={`text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-0 leading-relaxed transform transition-all duration-1000 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`} style={{ fontFamily: 'Inter, sans-serif' }}>
                 I am a passionate <span className="font-semibold text-blue-500">Backend Engineer</span> with a strong focus on building scalable systems, designing robust APIs, and optimizing data workflows. 
                 Creative and detail-oriented, I enjoy solving complex engineering problems and <span className="italic">writing</span> about technology, best practices, and ideas that I find impactful.
               </p>
@@ -242,7 +249,7 @@ function Home() {
               </div>
 
               <div className={`transform transition-all duration-1000 delay-700 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
-                <a href="mailto:philiplekan88@gmail.com" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold px-6 py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base lg:text-lg xl:text-xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                <a href="mailto:philiplekan88@gmail.com" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold px-6 py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base lg:text-lg xl:text-xl" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Let's Build Together
                   <i className="fas fa-arrow-right ml-2 lg:ml-3"></i>
                 </a>
@@ -255,7 +262,7 @@ function Home() {
       {/* EXPERIENCE SECTION */}
       <section id="experience-section" className="min-h-screen py-20">
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
             Experience & <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className={`text-lg ${colors.textMuted} text-center mb-12 max-w-3xl mx-auto`}>
@@ -397,7 +404,7 @@ function Home() {
       {/* BLOG SECTION */}
       <section id="blog-section" className="min-h-screen py-20">
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
             Blog & <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Articles</span>
           </h2>
           <p className={`text-lg ${colors.textMuted} text-center mb-12 max-w-3xl mx-auto`}>

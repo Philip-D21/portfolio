@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from './ThemeContext';
+import SEO from './SEO';
 
 function Experience() {
   const { colors } = useTheme();
@@ -107,13 +108,19 @@ function Experience() {
 
   return (
     <div className="flex flex-col h-full relative">
+      <SEO 
+        title="Experience - Philip Daudu | Backend Engineer & Full-Stack Developer"
+        description="Explore Philip Daudu's professional experience as a Backend Engineer. View my work history, technical skills, projects, and career progression in software development."
+        keywords="Philip Daudu Experience, Backend Engineer Jobs, Software Developer Career, API Development Experience, Python Developer, Node.js Projects"
+        url="https://philipd.dev/experience"
+      />
       <main className="flex-1 w-full px-4 sm:px-6 pt-4 overflow-y-auto">
         {/* Header Section */}
         <div className={`mb-12  transform transition-all duration-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <h1 className="text-4xl sm:text-6xl font-light mb-4 leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h1 className="text-4xl sm:text-6xl font-light mb-4 leading-none" style={{ fontFamily: 'Inter, sans-serif' }}>
             <span className="font-extrabold">Experience</span>
           </h1>
-          <p className={`text-lgr sm:text-xl ${colors.textSecondary} max-w-3xl  text-center mb-8`} style={{ fontFamily: 'Roboto Slab, serif' }}>
+          <p className={`text-lgr sm:text-xl ${colors.textSecondary} max-w-3xl  text-center mb-8`} style={{ fontFamily: 'Inter, sans-serif' }}>
             My professional journey in software development and building scalable solutions.
           </p>
 
@@ -145,7 +152,7 @@ function Experience() {
         {/* Work Experience Section */}
         {(activeFilter === 'all') && (
           <div className={`space-y-8 md:space-y-12 mb-16 transform transition-all duration-500 ${isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8" style={{ fontFamily: 'Inter, sans-serif' }}>
               Professional Experience
             </h2>
             {experiences.map((exp, index) => (
@@ -156,7 +163,7 @@ function Experience() {
               >
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-6">
                   <div className="mb-4 sm:mb-0">
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2 leading-tight group-hover:text-blue-500 transition-colors" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 leading-tight group-hover:text-blue-500 transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                       {exp.position}
                     </h3>
                     <div className={`flex flex-col sm:flex-row sm:items-center gap-2 text-lg ${colors.textSecondary}`}>
@@ -177,7 +184,7 @@ function Experience() {
 
                 {/* Expandable Content */}
                 <div className={`overflow-hidden transition-all duration-500 ${selectedExperience === exp.id ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-                  <div className="grid gap-3 text-base sm:text-lg leading-relaxed pt-4" style={{ fontFamily: 'Roboto Slab, serif' }}>
+                  <div className="grid gap-3 text-base sm:text-lg leading-relaxed pt-4" style={{ fontFamily: 'Inter, sans-serif' }}>
                     {exp.highlights.map((highlight, index) => (
                       <div key={index} className="flex items-start gap-3 transform transition-all duration-300 hover:translate-x-2">
                         <span className="text-blue-500 mt-2 text-sm">▶</span>
@@ -194,7 +201,7 @@ function Experience() {
         {/* Featured Projects Section */}
         {(activeFilter === 'projects' || activeFilter === 'all') && (
           <div className={`transform transition-all duration-500 delay-200 ${isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8" style={{ fontFamily: 'Inter, sans-serif' }}>
               Featured Projects
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -211,12 +218,12 @@ function Experience() {
                   <div className="relative z-10">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="text-3xl">{project.icon}</span>
-                      <h3 className="text-xl font-bold group-hover:text-blue-500 transition-colors" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                      <h3 className="text-xl font-bold group-hover:text-blue-500 transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                         {project.title}
                       </h3>
                     </div>
 
-                    <p className={`${colors.textSecondary} mb-4 leading-relaxed`} style={{ fontFamily: 'Roboto Slab, serif' }}>
+                    <p className={`${colors.textSecondary} mb-4 leading-relaxed`} style={{ fontFamily: 'Inter, sans-serif' }}>
                       {project.description}
                     </p>
 
@@ -271,10 +278,10 @@ function Experience() {
         {/* Call to Action */}
         <div className={`mt-16 text-center transform transition-all duration-1000 delay-500 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
               Let's Build Something Amazing Together
             </h3>
-            <p className={`${colors.textSecondary} text-lg mb-6`} style={{ fontFamily: 'Roboto Slab, serif' }}>
+            <p className={`${colors.textSecondary} text-lg mb-6`} style={{ fontFamily: 'Inter, sans-serif' }}>
               Interested in collaborating? I'm always excited to work on innovative projects and solve complex challenges.
             </p>
             
@@ -294,7 +301,7 @@ function Experience() {
                   href="/Philip Daudu Backend.pdf"
                   download="Philip_Daudu_CV.pdf"
                   className="inline-flex items-center gap-3 bg-white text-gray-800 border-2 border-gray-300 font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl hover:border-blue-500 hover:text-blue-600 transform hover:scale-105 transition-all duration-300"
-                  style={{ fontFamily: 'Montserrat, sans-serif' }}
+                  style={{ fontFamily: 'Inter, sans-serif' }}
                 >
                   <i className="fas fa-download text-lg"></i>
                   Download CV

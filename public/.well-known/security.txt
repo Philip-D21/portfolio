@@ -1,0 +1,10 @@
+Contact: mailto:philiplekan88@gmail.com
+Contact: https://philipd.dev
+Preferred-Languages: en
+Canonical: https://philipd.dev/.well-known/security.txt
+Policy: https://philipd.dev
+Hiring: https://philipd.dev/experience
+Acknowledgments: https://philipd.dev
+
+# Security contact information for Philip Daudu's portfolio website
+# If you discover any security vulnerabilities, please report them responsibly.

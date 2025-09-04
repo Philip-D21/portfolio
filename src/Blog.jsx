@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from './ThemeContext';
+import SEO from './SEO';
 
 function Blog() {
   const { colors } = useTheme();
@@ -55,13 +56,19 @@ function Blog() {
 
   return (
     <div className="flex flex-col h-full relative overflow-hidden">
+      <SEO 
+        title="Blog - Philip Daudu | Backend Engineering & Development Insights"
+        description="Read Philip Daudu's technical blog featuring insights on backend engineering, API development, system design, and software development best practices. Stay updated with the latest in tech."
+        keywords="Philip Daudu Blog, Backend Engineering Blog, API Development Articles, Software Development Insights, Technical Writing, Dev.to, Medium Articles"
+        url="https://philipd.dev/blog"
+      />
       <main className="flex-1 w-full px-4 sm:px-6 pt-4 overflow-y-auto">
         {/* Header Section */}
         <div className={`mb-12 transform transition-all duration-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <h1 className="text-4xl sm:text-6xl font-light mb-4 leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h1 className="text-4xl sm:text-6xl font-light mb-4 leading-none" style={{ fontFamily: 'Inter, sans-serif' }}>
             <span className="font-extrabold">Blog</span>
           </h1>
-          <p className={`text-lg sm:text-xl ${colors.textSecondary} max-w-3xl mb-8`} style={{ fontFamily: 'Roboto Slab, serif' }}>
+          <p className={`text-lg sm:text-xl ${colors.textSecondary} max-w-3xl mb-8`} style={{ fontFamily: 'Inter, sans-serif' }}>
             Thoughts, insights, and experiences from my journey in software development.
           </p>
 
@@ -76,7 +83,7 @@ function Blog() {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className={`w-full pl-10 pr-4 py-3 ${colors.button} border-2 ${colors.border} rounded-lg focus:border-blue-500 focus:outline-none transition-colors duration-200`}
-                style={{ fontFamily: 'Roboto Slab, serif' }}
+                style={{ fontFamily: 'Inter, sans-serif' }}
               />
             </div>
 
@@ -134,7 +141,7 @@ function Blog() {
                   </div>
                   
                   {/* Article Title */}
-                  <h2 className="text-2xl sm:text-3xl font-bold mb-4 leading-tight group-hover:text-blue-500 transition-colors" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                  <h2 className="text-2xl sm:text-3xl font-bold mb-4 leading-tight group-hover:text-blue-500 transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                     <a 
                       href={article.url} 
                       target="_blank" 
@@ -146,7 +153,7 @@ function Blog() {
                   </h2>
                   
                   {/* Article Description */}
-                  <p className={`text-base sm:text-lg ${colors.textSecondary} mb-6 leading-relaxed`} style={{ fontFamily: 'Roboto Slab, serif' }}>
+                  <p className={`text-base sm:text-lg ${colors.textSecondary} mb-6 leading-relaxed`} style={{ fontFamily: 'Inter, sans-serif' }}>
                     {article.description}
                   </p>
 
@@ -192,7 +199,7 @@ function Blog() {
           ) : (
             <div className="text-center py-16">
               <i className="fas fa-search text-6xl text-gray-300 mb-4"></i>
-              <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Inter, sans-serif' }}>
                 No articles found
               </h3>
               <p className={`${colors.textSecondary} mb-4`}>
@@ -214,10 +221,10 @@ function Blog() {
         {/* Call to Action */}
         <div className={`mt-16 text-center transform transition-all duration-1000 delay-500 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
               Stay Updated with My Writing
             </h3>
-            <p className={`${colors.textSecondary} text-lg mb-6`} style={{ fontFamily: 'Roboto Slab, serif' }}>
+            <p className={`${colors.textSecondary} text-lg mb-6`} style={{ fontFamily: 'Inter, sans-serif' }}>
               Follow me on these platforms to get notified when I publish new articles about backend development, architecture, and software engineering.
             </p>
             

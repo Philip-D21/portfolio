@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://philipd.dev/sitemap.xml
+
+# Common crawl delays
+Crawl-delay: 1
+
+# Disallow access to admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all content to be indexed
+Allow: /
+Allow: /experience
+Allow: /work
+Allow: /blog
+Allow: /image/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.svg
+Allow: /*.pdf
