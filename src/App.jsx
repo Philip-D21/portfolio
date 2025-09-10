@@ -7,6 +7,8 @@ import Home from './Home';
 import Experience from './Experience';
 import Work from './Work';
 import Blog from './Blog';
+import Birthday from './Birthday';
+import Anonymous from './Anonymous';
 
 import './App.css';
 
@@ -23,6 +25,9 @@ function AppContent() {
             <Route path="/experience" element={<Experience />} />
             <Route path="/work" element={<Work />} />
             <Route path="/blog" element={<Blog />} />
+            {/* <Route path="/birthday" element={<Birthday />} /> */}
+            <Route path="/anonymous" element={<Anonymous />} />
+            <Route path="/anonymous/:username" element={<Anonymous />} />
           </Routes>
         </main>
         <Footer />
@@ -38,5 +43,8 @@ function App() {
     </ThemeProvider>
   );
 }
+
+
+
 
 export default App;

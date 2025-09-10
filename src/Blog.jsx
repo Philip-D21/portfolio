@@ -2,15 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { useTheme } from './ThemeContext';
 import SEO from './SEO';
 
+
 function Blog() {
   const { colors } = useTheme();
   const [isLoaded, setIsLoaded] = useState(false);
   const [selectedPlatform, setSelectedPlatform] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
 
+
   useEffect(() => {
     setIsLoaded(true);
   }, []);
+
 
   const articles = [
     {
@@ -43,6 +46,7 @@ function Blog() {
     }
   ];
 
+
   // Filter articles based on platform and search term
   const filteredArticles = articles.filter(article => {
     const matchesPlatform = selectedPlatform === 'all' || article.platform.toLowerCase() === selectedPlatform.toLowerCase();
@@ -52,7 +56,10 @@ function Blog() {
     return matchesPlatform && matchesSearch;
   });
 
+
   const platforms = ['all', ...new Set(articles.map(article => article.platform))];
+
+
 
   return (
     <div className="flex flex-col h-full relative overflow-hidden">
@@ -269,5 +276,6 @@ function Blog() {
     </div>
   );
 }
+
 
 export default Blog;

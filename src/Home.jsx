@@ -206,7 +206,7 @@ function Home() {
                 <div className="relative group">
                   <div className="absolute -inset-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
                   <div className="relative">
-                    <img src="/image/headshot.jpeg" alt="Philip Daudu" className="w-64 h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96 object-cover rounded-3xl shadow-2xl transform group-hover:scale-105 transition-all duration-300" />
+                    <img src="/image/headshot2.png" alt="Philip Daudu" className="w-64 h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96 object-cover rounded-3xl shadow-2xl transform group-hover:scale-105 transition-all duration-300" />
                     <div className="absolute -bottom-3 -right-3 lg:-bottom-4 lg:-right-4 bg-gradient-to-r from-green-400 to-blue-500 text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-full shadow-lg transform rotate-12 hover:rotate-0 transition-transform duration-300">
                       <span className="font-bold text-xs lg:text-sm">Available for work!</span>
                     </div>

@@ -35,5 +35,21 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  
+  <!-- Birthday Messages Page -->
+  <url>
+    <loc>https://philipd.vercel.app/birthday</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Anonymous Messages Platform -->
+  <url>
+    <loc>https://philipd.vercel.app/anonymous</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>

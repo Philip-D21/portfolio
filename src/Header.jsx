@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from './ThemeContext';
 
+
+
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const { colors, isDarkMode, toggleTheme } = useTheme();
@@ -36,6 +38,20 @@ function Header() {
               className={`${colors.accent} hover:${colors.accentHover} transition-colors duration-200`}
             >
               blog
+            </Link>
+            <Link 
+              to="/birthday" 
+              className={`${colors.accent} hover:${colors.accentHover} transition-colors duration-200 relative`}
+            >
+              🎂 birthday
+              <span className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+            </Link>
+            <Link 
+              to="/anonymous" 
+              className={`${colors.accent} hover:${colors.accentHover} transition-colors duration-200 relative`}
+            >
+              🕵️ anonymous
+              <span className="absolute -top-1 -right-1 w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
             </Link>
           </nav>
           
@@ -95,10 +111,26 @@ function Header() {
               </Link>
               <Link 
                 to="/blog" 
-                className={`${colors.accent} hover:${colors.accentHover} transition-colors duration-200 text-xl py-2 border-b ${colors.border}`} 
+                className={`${colors.accent} hover:${colors.accentHover} transition-colors duration-200 text-xl py-2 border-b ${colors.border}`}
                 onClick={() => setNavOpen(false)}
               >
                 blog
+              </Link>
+              <Link 
+                to="/birthday" 
+                className={`${colors.accent} hover:${colors.accentHover} transition-colors duration-200 text-xl py-2 border-b ${colors.border} relative`}
+                onClick={() => setNavOpen(false)}
+              >
+                🎂 birthday messages
+                <span className="absolute top-2 right-4 w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+              </Link>
+              <Link 
+                to="/anonymous" 
+                className={`${colors.accent} hover:${colors.accentHover} transition-colors duration-200 text-xl py-2 border-b ${colors.border} relative`}
+                onClick={() => setNavOpen(false)}
+              >
+                🕵️ anonymous messages
+                <span className="absolute top-2 right-4 w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
               </Link>
             </div>
             
@@ -125,5 +157,7 @@ function Header() {
     </header>
   );
 }
+
+
 
 export default Header; 
