@@ -39,20 +39,20 @@ function Header() {
             >
               blog
             </Link>
-            <Link 
+            {/* <Link 
               to="/birthday" 
               className={`${colors.accent} hover:${colors.accentHover} transition-colors duration-200 relative`}
             >
               🎂 birthday
               <span className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
-            </Link>
-            <Link 
+            </Link> */}
+            {/* <Link 
               to="/anonymous" 
               className={`${colors.accent} hover:${colors.accentHover} transition-colors duration-200 relative`}
             >
               🕵️ anonymous
               <span className="absolute -top-1 -right-1 w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
-            </Link>
+            </Link> */}
           </nav>
           
           {/* Theme toggle button */}
@@ -116,7 +116,7 @@ function Header() {
               >
                 blog
               </Link>
-              <Link 
+              {/* <Link 
                 to="/birthday" 
                 className={`${colors.accent} hover:${colors.accentHover} transition-colors duration-200 text-xl py-2 border-b ${colors.border} relative`}
                 onClick={() => setNavOpen(false)}
@@ -131,7 +131,7 @@ function Header() {
               >
                 🕵️ anonymous messages
                 <span className="absolute top-2 right-4 w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
-              </Link>
+              </Link> */}
             </div>
             
             {/* Theme toggle in mobile menu */}
